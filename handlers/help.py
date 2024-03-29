@@ -83,6 +83,8 @@ async def acceptQuestion(call: CallbackQuery, state: FSMContext) -> None:
         )
         await state.update_data(question_id=question_id, questioner_id=question[0][2], question_text=question[0][4])
         await state.set_state(Answer.text)
+    else:
+        await call.answer("На це запитання вже відповідає інший адміністратор 🤷")
 
 
 @router.message(Answer.text, F.text)
