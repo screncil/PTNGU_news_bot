@@ -1,20 +1,22 @@
 import asyncio
 from aiogram import Bot, Dispatcher
+from aiogram.fsm.storage.memory import MemoryStorage
+
 import config
 import logging
 from datetime import datetime
 
-from handlers import start, authors, help
+from handlers import start, authors, help, news
 
 bot = Bot(config.BOT_TOKEN)
+dp = Dispatcher(storage=MemoryStorage())
 
 async def run_bot():
-    dp = Dispatcher()
-
     dp.include_routers(
         start.router,
         authors.router,
-        help.router
+        help.router,
+        news.router
     )
 
     await dp.start_polling(bot)

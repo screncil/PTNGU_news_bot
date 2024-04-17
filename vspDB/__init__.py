@@ -1,5 +1,5 @@
-import logging
 import sqlite3
+
 import config
 
 
@@ -58,4 +58,11 @@ class Questions(vspConnection):
 
     def deleteQuestion(self, question_id):
         self.cur.execute("DELETE FROM questions WHERE question_id=?", (question_id,))
+        self.conn.commit()
+
+
+class News(vspConnection):
+
+    def addNews(self, title, text, date ,news_id):
+        self.cur.execute("INSERT INTO news (title, text, date, news_id) VALUES (?, ?, ?, ?)", (title, text, date, news_id))
         self.conn.commit()
