@@ -21,7 +21,7 @@ router = Router()
 question_db = Questions()
 admin_db = Admin()
 
-@router.message(StateFilter(None), F.text == "❓ Задати питання")
+@router.message(F.text == "❓ Задати питання")
 async def help(msg: Message, state: FSMContext):
     if not question_db.checkUser(msg.from_user.id):
         await msg.answer(

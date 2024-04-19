@@ -1,0 +1,364 @@
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589698 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589699 is handled. Duration 343 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589700 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589701 is handled. Duration 311 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589702 is handled. Duration 234 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589703 is handled. Duration 156 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589704 is handled. Duration 93 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589705 is handled. Duration 406 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589706 is handled. Duration 438 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589707 is handled. Duration 125 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589708 is handled. Duration 202 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589709 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589710 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589711 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589712 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589713 is handled. Duration 140 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589714 is handled. Duration 186 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589715 is handled. Duration 390 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589716 is handled. Duration 296 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589717 is handled. Duration 170 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589718 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589719 is handled. Duration 171 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589720 is handled. Duration 171 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589721 is handled. Duration 313 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589722 is handled. Duration 233 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589723 is handled. Duration 375 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589724 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001364757F020>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589725 is handled. Duration 484 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589726 is handled. Duration 171 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589727 is handled. Duration 171 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589728 is handled. Duration 187 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589729 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589730 is not handled. Duration 0 ms by bot id=6994528597
+ERROR:aiogram.event:Cause exception while process update id=922589730 by bot id=6994528597
+KeyError: 'title'
+Traceback (most recent call last):
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\programming\botvspcollege\handlers\news.py", line 109, in acceptt
+    await bot.bot.send_message(chat_id=config.CHANNEL_ID, text=f"<b>{data['title']}</b>\n\n<i>{data['description']}</i>\n\n{datetime.now().strftime('%Y/%m/%d %H:%M')}", parse_mode=ParseMode.HTML)
+                                                                     ~~~~^^^^^^^^^
+KeyError: 'title'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000019F5E1645C0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000019F61B28F50>, 16681.828)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000019F6027CBF0>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589731 is handled. Duration 281 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589732 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589733 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589734 is handled. Duration 375 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589735 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589736 is handled. Duration 139 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589737 is handled. Duration 219 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589738 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589739 is handled. Duration 219 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589740 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589741 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589742 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589743 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589744 is handled. Duration 264 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589745 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589746 is handled. Duration 155 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589747 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589748 is handled. Duration 327 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589749 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589750 is not handled. Duration 16 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589751 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589752 is handled. Duration 156 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589753 is handled. Duration 405 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589754 is handled. Duration 875 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589755 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589756 is not handled. Duration 15 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589757 is not handled. Duration 16 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589758 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589759 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589760 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589761 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000016DA81BF2F0>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589762 is handled. Duration 219 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589763 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589764 is handled. Duration 155 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589765 is handled. Duration 280 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589766 is handled. Duration 391 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589767 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2685)
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6994528597)
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000166C335DB20>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589768 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589769 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589770 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589771 is handled. Duration 266 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589772 is handled. Duration 453 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589773 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589774 is handled. Duration 469 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589775 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589776 is handled. Duration 171 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589777 is handled. Duration 63 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589778 is handled. Duration 110 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589779 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589780 is handled. Duration 311 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589781 is handled. Duration 344 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589782 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589783 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589784 is handled. Duration 218 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589785 is handled. Duration 125 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589786 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589787 is handled. Duration 313 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589788 is handled. Duration 405 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000218F99EE810>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589789 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589790 is handled. Duration 203 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589791 is handled. Duration 140 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589792 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589793 is handled. Duration 344 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589794 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589795 is handled. Duration 93 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589796 is handled. Duration 93 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589797 is handled. Duration 155 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589798 is handled. Duration 188 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589799 is handled. Duration 483 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589800 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589801 is handled. Duration 360 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589802 is handled. Duration 108 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589803 is handled. Duration 312 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589804 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589805 is handled. Duration 62 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589806 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589807 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589808 is handled. Duration 578 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C0570CEE10>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589809 is handled. Duration 265 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589810 is handled. Duration 92 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589811 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589812 is handled. Duration 296 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589813 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589814 is handled. Duration 312 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002AADCD6EBD0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000002AADCD99490>, 17161.656)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000002AADCD5A540>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589815 is handled. Duration 280 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589816 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589817 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589818 is handled. Duration 469 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589819 is handled. Duration 389 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589820 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589821 is handled. Duration 140 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589822 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589823 is handled. Duration 157 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589824 is handled. Duration 311 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589825 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589826 is handled. Duration 171 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589827 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589828 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589829 is not handled. Duration 15 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589830 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589831 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589832 is handled. Duration 187 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589833 is handled. Duration 264 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589834 is handled. Duration 140 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589835 is handled. Duration 171 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589836 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589837 is handled. Duration 93 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589838 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589839 is handled. Duration 281 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589840 is handled. Duration 483 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001DD7A78F5F0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000001DD7A7B9130>, 17315.171)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000001DD7A78DA30>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589841 is handled. Duration 344 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589842 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589843 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589844 is handled. Duration 266 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589845 is handled. Duration 265 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589846 is handled. Duration 110 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589847 is handled. Duration 139 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589848 is handled. Duration 110 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589849 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589850 is handled. Duration 561 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000209FDF3DB50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x00000209FDF694F0>, 17364.015)]']
+connector: <aiohttp.connector.TCPConnector object at 0x00000209FDF3F200>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589851 is handled. Duration 327 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589852 is handled. Duration 186 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589853 is handled. Duration 110 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589854 is handled. Duration 110 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589855 is handled. Duration 281 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589856 is handled. Duration 436 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589857 is not handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001AC5543DB50>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000001AC5542D4F0>, 17395.421)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000001AC5540BCB0>
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589858 is handled. Duration 250 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589859 is handled. Duration 61 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589860 is handled. Duration 61 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589861 is handled. Duration 296 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589862 is handled. Duration 389 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589863 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589864 is handled. Duration 125 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589865 is handled. Duration 79 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589866 is handled. Duration 203 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589867 is handled. Duration 639 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589868 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589869 is handled. Duration 125 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589870 is handled. Duration 110 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589871 is handled. Duration 280 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589872 is handled. Duration 311 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589873 is handled. Duration 63 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589874 is handled. Duration 156 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589875 is handled. Duration 109 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589876 is handled. Duration 187 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589877 is handled. Duration 125 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589878 is handled. Duration 79 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589879 is handled. Duration 92 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589880 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589881 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589882 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589883 is handled. Duration 640 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589884 is handled. Duration 77 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589885 is handled. Duration 202 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589886 is handled. Duration 155 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589887 is handled. Duration 389 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589888 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589889 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589890 is handled. Duration 125 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589891 is handled. Duration 14 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589892 is handled. Duration 14 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589893 is handled. Duration 405 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589894 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589895 is handled. Duration 202 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589896 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589897 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589898 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589899 is handled. Duration 781 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589900 is handled. Duration 63 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589901 is handled. Duration 94 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589902 is handled. Duration 140 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589903 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589904 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589905 is handled. Duration 733 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589906 is handled. Duration 78 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589907 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589908 is handled. Duration 93 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589909 is handled. Duration 172 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000135DCD9DFA0>
+ERROR:asyncio:Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x00000135DCD8D5B0>, 17556.375)]']
+connector: <aiohttp.connector.TCPConnector object at 0x00000135DCB9B530>

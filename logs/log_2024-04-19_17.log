@@ -1,0 +1,14 @@
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+INFO:aiogram.event:Update id=922589377 is handled. Duration 359 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589378 is handled. Duration 188 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589379 is handled. Duration 93 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589380 is handled. Duration 93 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589381 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589382 is handled. Duration 0 ms by bot id=6994528597
+INFO:aiogram.event:Update id=922589383 is handled. Duration 436 ms by bot id=6994528597
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @vsptest_bot id=6994528597 - 'Тестовий Бот ВСП "Павлоградський фаховий коледж НТУ "ДП"'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000171B4E80410>
